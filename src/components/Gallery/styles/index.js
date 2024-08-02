@@ -6,6 +6,27 @@ export const StyledGallery = styled.div`
     white-space: nowrap;
     overflow-x: hidden;
 
+    & #radio-icons{
+        position: absolute;
+        bottom: 53px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        & p{
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            background-color: #CCCCCC;
+            transition: 175ms;
+            &.marked{
+                background-color: #C92071;
+            }
+        }
+    }
+    
+
     & #controlls{
         position: absolute;
         top: 50%;

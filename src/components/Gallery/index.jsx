@@ -15,14 +15,12 @@ export const Gallery = ({width, height, images, radius, children}) => {
     )
 
     function moveSlide(direction){
-        if(direction == 'left' && displayedImage > 0){
+        if(direction == 'left' && (currentImage / -100) > 0){
             setCurrentImage(prev => prev += Number(width.replace(/[a-z]+/, '')))
             lastClick = 'left'
-            displayedImage--
-        }else if(direction == 'right' && displayedImage < images.length - 1 ){
+        }else if(direction == 'right' && (currentImage / -100) < images.length - 1 ){
             setCurrentImage(prev => prev -= Number(width.replace(/[a-z]+/, '')))
             lastClick = 'right'
-            displayedImage++
         }
     }
     useEffect(() => {
@@ -40,6 +38,11 @@ export const Gallery = ({width, height, images, radius, children}) => {
             </div>
             <div>
                 {mappedImages}
+            </div>
+            <div id="radio-icons">
+                {images.map((image, index) => {
+                    return <p key={index} className={index == (currentImage / -100) ? 'marked' : ''}></p>
+                })}
             </div>
             {children}
         </StyledGallery>
