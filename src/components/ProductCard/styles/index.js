@@ -14,6 +14,9 @@ export const StyledProductCard = styled.div`
         outline-offset: 6px;
         border-radius: 4px;
     }
+    & a{
+        text-decoration: none;
+    }
     & #image-container{
         position: relative;
     }
