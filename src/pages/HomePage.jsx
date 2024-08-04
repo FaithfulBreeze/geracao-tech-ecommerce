@@ -157,7 +157,7 @@ const ImageContainer = ({ src, discount }) =>{
         <div id="collection-card">
             <img src={src} />
             <p>{discount}& OFF</p>
-            <button>Comprar</button>
+            <a href="/product-view-page"><button>Comprar</button></a>
         </div>
     )
 }
