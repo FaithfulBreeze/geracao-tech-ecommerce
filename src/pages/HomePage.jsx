@@ -18,7 +18,7 @@ import galleryImage from '../assets/slide/home-slide.svg'
 export const HomePage = () => {
     return(
         <Layout>
-            <Gallery 
+            <Gallery
                 width="100vw"
                 images={[
                     {
