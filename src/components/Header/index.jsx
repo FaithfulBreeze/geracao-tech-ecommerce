@@ -41,9 +41,9 @@ export const Header = () => {
             <nav>
                 <ul>
                     <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="/produtos">Produtos</NavLink></li>
-                    <li><NavLink to="/categorias">Categorias</NavLink></li>
-                    <li><NavLink to="/meus">Meus Pedidos</NavLink></li>
+                    <li><NavLink to="/products">Produtos</NavLink></li>
+                    <li><NavLink to="/categories">Categorias</NavLink></li>
+                    <li><NavLink to="/orders">Meus Pedidos</NavLink></li>
                 </ul>
             </nav>
         </StyledHeader>
