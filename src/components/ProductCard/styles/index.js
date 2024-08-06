@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const StyledProductCard = styled.div`
-    @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
-
+   
     width: 292px;
     height: 439px;
     margin-bottom: 120px;

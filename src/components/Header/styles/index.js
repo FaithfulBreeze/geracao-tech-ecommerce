@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
     background-color: white;
     box-shadow: 0px 0.5px 10px #0000001a;
     &{
