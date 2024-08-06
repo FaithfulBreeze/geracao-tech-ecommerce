@@ -197,6 +197,12 @@ export const ProductListingPage = () => {
 }
 
 const StyledMainContent = styled.main`
+    padding-top: 40px;
+    color: #474747;
+    font-family: "Inter", sans-serif;
+    & span.bold{
+        font-weight: 700;
+    }
     & #info-container{
         width: 1240px;
         height: 60px;
@@ -204,6 +210,7 @@ const StyledMainContent = styled.main`
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        
     }
     &   div#parent-container div#filter-by{
         width: 308px;
@@ -211,6 +218,17 @@ const StyledMainContent = styled.main`
         border-radius: 4px;
         background-color: white;
         padding: 30px;
+        & hr{
+            border-color: #CCCCCC;
+            margin-top: 20px;
+            border-width: 0.5px;
+        }
+        & h3{
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: #474747;
+        }
     }
     & div#parent-container{
         display: flex;
@@ -220,5 +238,6 @@ const StyledMainContent = styled.main`
         & section{
             width: 904px;
         }
+
     }
 `
