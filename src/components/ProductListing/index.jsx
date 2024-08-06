@@ -8,7 +8,7 @@ export const ProductListing = ({ products, col }) => {
         <>
             {arr.map(() => {
                 if(col == "3"){
-                    return <StyledProductListingCol3>
+                    return <StyledProductListingCol3 key="col3">
                         {products.map((product, index) => (
                             <ProductCard 
                                 image={product.image}
@@ -20,7 +20,7 @@ export const ProductListing = ({ products, col }) => {
                         ))}
                     </StyledProductListingCol3>
                 }else{
-                    return <StyledProductListingCol4>
+                    return <StyledProductListingCol4 key="col4">
                         {products.map((product, index) => (
                             <ProductCard 
                                 image={product.image}

@@ -205,8 +205,8 @@ const StyledMainContent = styled.main`
         justify-content: space-between;
         align-items: baseline;
     } 
-    & div#filter-by{
-        width: 308px;
+    &   div#parent-container div#filter-by{
+        width: 408px;
         height: 720px;
         border-radius: 4px;
         background-color: white;
@@ -216,5 +216,6 @@ const StyledMainContent = styled.main`
         display: flex;
         justify-content: space-between;
         width: 1240px;
+        margin: auto;
     }
 `
