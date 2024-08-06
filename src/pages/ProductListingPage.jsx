@@ -80,7 +80,7 @@ export const ProductListingPage = () => {
                         ]} />  
                     </div>
                     <Section >
-                        <ProductListing products={
+                        <ProductListing col="3" products={
                             [
                                 {
                                     image: '',

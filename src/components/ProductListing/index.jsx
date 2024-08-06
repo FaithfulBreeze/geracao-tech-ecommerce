@@ -1,20 +1,38 @@
 import { ProductCard } from "../ProductCard"
-import { StyledProductListing } from "./styles"
+import { StyledProductListingCol4, StyledProductListingCol3 } from "./styles"
 
-export const ProductListing = ({ products, width }) => {
-    return(
-        <StyledProductListing>
-            <div style={{width:width || "1440px"}}>
-                {products.map((product, index) => (
-                    <ProductCard 
-                        image={product.image}
-                        name={product.name}
-                        price={product.price}
-                        priceDiscount={product.priceDiscount}
-                        key={index}
-                    />
-                ))}
-            </div>
-        </StyledProductListing>
+export const ProductListing = ({ products, col }) => {
+    const arr = [0]
+    
+    return (
+        <>
+            {arr.map(() => {
+                if(col == "3"){
+                    return <StyledProductListingCol3>
+                        {products.map((product, index) => (
+                            <ProductCard 
+                                image={product.image}
+                                name={product.name}
+                                price={product.price}
+                                priceDiscount={product.priceDiscount}
+                                key={index}
+                            />
+                        ))}
+                    </StyledProductListingCol3>
+                }else{
+                    return <StyledProductListingCol4>
+                        {products.map((product, index) => (
+                            <ProductCard 
+                                image={product.image}
+                                name={product.name}
+                                price={product.price}
+                                priceDiscount={product.priceDiscount}
+                                key={index}
+                            />
+                        ))}
+                    </StyledProductListingCol4>
+                }
+            })}
+        </>
     )
 }
