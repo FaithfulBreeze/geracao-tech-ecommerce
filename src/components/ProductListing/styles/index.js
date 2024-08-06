@@ -14,6 +14,6 @@ export const StyledProductListingCol3 = styled.div`
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 14px;
     row-gap: 40px;
 `

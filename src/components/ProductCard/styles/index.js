@@ -8,9 +8,9 @@ export const StyledProductCard = styled.div`
     transition-duration: 300ms;
     outline: 2px solid transparent;
     &:hover{
-        transform: scale(1.023);
+        transform: scale(1.018);
         outline: 2px solid #C92071;
-        outline-offset: 6px;
+        outline-offset: 3px;
         border-radius: 4px;
     }
     & a{

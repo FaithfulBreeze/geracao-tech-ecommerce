@@ -10,11 +10,11 @@ export const Section = ({ title, link, titlePosition, children }) => {
     }
     return(
         <StyledSection>
-            <div id="container">
+            {title && <div id="container">
                 <p style={positionSetter()}>{title}</p>
                 <NavLink to={'/products'} style={{position: 'absolute', right: '0'}} >{link}<img style={{visibility: link ? 'visible' : 'hidden'}} src={LinkArrow} /></NavLink>
-            </div>
-            <div id="chidren">{children}</div>
+            </div>}
+            <div id="children">{children}</div>
         </StyledSection>
     )
 }
