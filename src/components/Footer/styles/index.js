@@ -89,9 +89,10 @@ export const StyledFooter = styled.footer`
         }
 
         & #license{
+            height: 24px;
             width: 1240px;
             text-align: center;
-            padding-top: 23px;
+            padding-top: 18px;
             margin: auto;
             font-size: 13px;
         }
