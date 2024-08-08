@@ -13,13 +13,11 @@ export const ProductListingPage = () => {
                         <p><span className="bold">Resultados para “Tênis”</span> - 389 produtos</p>
                     </div>
                     <div id="order-by">
-                        <select id="selects" label="Ordenar por:">
-                            <optgroup> 
-                                <option value="">Mais relevantes</option>
-                            </optgroup>
+                        <label htmlFor="order-by-select">Ordernar por: </label>
+                        <select name="order-by" id="order-by-select">
+                            <option value="mais-relevantes">mais relevantes</option>
                         </select>
-                  </div>
-
+                    </div>
                 </div>
                 <div id="parent-container">
                     <div id="filter-by">
@@ -191,7 +189,6 @@ export const ProductListingPage = () => {
                     
                 </div>
             </StyledMainContent>
-
         </Layout>
     )
 }
@@ -200,13 +197,31 @@ const StyledMainContent = styled.main`
     padding-top: 40px;
     color: #474747;
     font-family: "Inter", sans-serif;
+    & #order-by{
+        width: 332px;
+        padding: 16px 0 16px 15px;
+        border: 1px solid #474747;
+        border-radius: 1px;
+        color: #474747;
+        & label{
+            font-weight: 700;
+        }
+        & #order-by-select{
+            font-size: 16px;
+            color: #474747;
+            background-color: transparent;
+            font-family: inherit;
+            border: none;
+            width: 60%;
+        }
+    }
     & span.bold{
         font-weight: 700;
     }
     & #info-container{
         width: 1240px;
-        height: 60px;
         margin: auto;
+        margin-bottom: 40px;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
