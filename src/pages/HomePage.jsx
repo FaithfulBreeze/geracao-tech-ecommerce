@@ -325,7 +325,6 @@ const StyledCollectionComponent = styled.div`
     }
 `
 const StyledSpecialOffer = styled.div`
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
     background-color: white;
     height: 553px;
     padding: 0 159px 0 52px;
@@ -400,7 +399,6 @@ const StyledSpecialOffer = styled.div`
     }
 `
 const StyledGalleryTextContent = styled.div`
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
     font-family: "Inter", sans-serif;
     width: 510px;
     display: flex;

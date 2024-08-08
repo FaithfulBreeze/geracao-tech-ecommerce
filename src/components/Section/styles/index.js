@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledSection = styled.section`
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
     & #container{
         font-family: "Inter", sans-serif;
         position: relative;

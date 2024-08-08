@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
     &{
         height: 454px;
         background-color: #1F1F1F;
