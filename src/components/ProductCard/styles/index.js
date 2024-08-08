@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
 export const StyledProductCard = styled.div`
-    @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
-
+   
     width: 292px;
     height: 439px;
     margin-bottom: 120px;
     transition-duration: 300ms;
     outline: 2px solid transparent;
     &:hover{
-        transform: scale(1.023);
+        transform: scale(1.018);
         outline: 2px solid #C92071;
-        outline-offset: 6px;
+        outline-offset: 3px;
         border-radius: 4px;
+    }
+    & a{
+        text-decoration: none;
     }
     & #image-container{
         position: relative;
