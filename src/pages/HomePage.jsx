@@ -325,6 +325,7 @@ const StyledCollectionComponent = styled.div`
     }
 `
 const StyledSpecialOffer = styled.div`
+    margin-top: 120px;
     background-color: white;
     height: 553px;
     padding: 0 159px 0 52px;

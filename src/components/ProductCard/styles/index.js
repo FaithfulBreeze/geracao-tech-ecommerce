@@ -4,7 +4,6 @@ export const StyledProductCard = styled.div`
    
     width: 292px;
     height: 439px;
-    margin-bottom: 120px;
     transition-duration: 300ms;
     outline: 2px solid transparent;
     &:hover{

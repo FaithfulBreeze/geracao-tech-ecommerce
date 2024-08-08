@@ -90,6 +90,12 @@ export const ProductListingPage = () => {
                                     image: '',
                                     name: 'K-Swiss V8 - Masculino',
                                     price: '200',
+                                    priceDiscount: '45'
+                                },
+                                {
+                                    image: '',
+                                    name: 'K-Swiss V8 - Masculino',
+                                    price: '200',
                                     priceDiscount: '30'
                                 },
                                 {
@@ -252,6 +258,7 @@ const StyledMainContent = styled.main`
         margin: auto;
         & section{
             width: 904px;
+            margin-bottom: 140px;
         }
 
     }
