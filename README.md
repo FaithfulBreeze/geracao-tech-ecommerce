@@ -18,3 +18,9 @@
   <li><a href="https://github.com/rafaelAlvesQaTester">Marcos Rafael Alves</a></li>
   <li><a href="https://github.com/jfelipefreitas">João Felipe de Souza Freitas</a></li>
 </ul>
+<h2>Como rodar o projeto</h2>
+<ul>
+  <li>git clone https://github.com/FaithfulBreeze/geracao-tech-ecommerce.git .</li>
+  <li>npm i</li>
+  <li>npm run dev</li>
+</ul>
