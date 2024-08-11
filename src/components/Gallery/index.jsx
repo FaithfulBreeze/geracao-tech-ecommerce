@@ -10,7 +10,7 @@ let timeout
 
 export const Gallery = ({width, height, images, radius, children, showThumbs}) => {
     const [currentImage, setCurrentImage] = useState(0)
-    const gallerySizeSettings = { width, height, borderRadius: radius}
+    const gallerySizeSettings = { marginBottom: showThumbs ? '' : '38px', width, height, borderRadius: radius}
     const mappedImages = images.map(
         (image, index) => <img src={image.src} style={{marginLeft: index == 0 ? `${currentImage}%` : null}} className="slide-image" id={`image-${index}`} key={index}/>
     )
@@ -32,7 +32,7 @@ export const Gallery = ({width, height, images, radius, children, showThumbs}) =
         }, 5000)
     },[currentImage])
     return(
-        <>
+        <div>
             <StyledGallery style={gallerySizeSettings}>
                 <div id="controlls" >
                     <img src={leftArrow} alt="Left arrow" onClick={() => moveSlide('left')} />
@@ -48,25 +48,29 @@ export const Gallery = ({width, height, images, radius, children, showThumbs}) =
                 </div>
                 {children}
             </StyledGallery>
-            {showThumbs && <StyledThumbs style={{width}} id="thumbs">
+            {showThumbs && <StyledThumbs style={{maxWidth: width}} id="thumbs">
                 {images.map((image, index) => {
-                    return <img key={index} style={{borderRadius: radius}} src={image.src} />
+                    return <img key={index} className={index == (currentImage / -100) ? 'border' : ''} style={{borderRadius: radius}} src={image.src} />
                 })}
             </StyledThumbs>}
-        </>
+        </div>
     )
 }
 
 const StyledThumbs = styled.div`
-    margin-top: 20px;
-    height: 96px;
-    padding: 0;
+    margin-top: 18px;
+    padding: 2px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-y: hidden;
     align-items: flex-start;
-    gap: 28px;
     & img{
+        width: 118px;
         height: 100%;
+    }
+    .border{
+        outline: 2px solid #C92071;
     }
 
 `

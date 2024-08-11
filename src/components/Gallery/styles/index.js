@@ -5,7 +5,6 @@ export const StyledGallery = styled.div`
     background: #F5F5F5;
     white-space: nowrap;
     overflow-x: hidden;
-    margin-bottom: 38px;
 
     & #radio-icons{
         position: absolute;

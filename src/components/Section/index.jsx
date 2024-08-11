@@ -12,7 +12,7 @@ export const Section = ({ title, link, titlePosition, children }) => {
         <StyledSection>
             {title && <div id="container">
                 <p style={positionSetter()}>{title}</p>
-                <NavLink to={'/products'} style={{position: 'absolute', right: '0'}} >{link}<img style={{visibility: link ? 'visible' : 'hidden'}} src={LinkArrow} /></NavLink>
+                {link ? <NavLink to={link.href} style={{position: 'absolute', right: '0'}} >{link.text}<img style={{visibility: link ? 'visible' : 'hidden'}} src={LinkArrow} /></NavLink> : ''}
             </div>}
             <div id="children">{children}</div>
         </StyledSection>

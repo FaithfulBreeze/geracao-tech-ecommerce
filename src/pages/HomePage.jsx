@@ -74,7 +74,10 @@ export const HomePage = () => {
             <Section
                 title={'Produtos em alta'}
                 titlePosition={'left'}
-                link={'Ver todos'}
+                link={{
+                    "text": "Ver todos",
+                    "href": "/products"
+                }}
             >
                 <ProductListing products={[
                     {
