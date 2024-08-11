@@ -2,6 +2,7 @@ import { StyledBuyBox } from "./styles"
 import whiteStarIcon from "../../assets/white-star-icon.svg"
 import filledStar from "../../assets/star-icon-filled.svg"
 import emptyStar from "../../assets/star-icon.svg"
+import { ProductOptions } from "../ProductOptions"
 
 export const BuyBox = ({ name, reference, stars, rating, price, priceDiscount, description, children}) => {
     const starsCount = Math.trunc(stars)
@@ -38,6 +39,20 @@ export const BuyBox = ({ name, reference, stars, rating, price, priceDiscount, d
                 <h3>Descrição do produto</h3>
                 <p>{description}</p>
             </div>
+            <div id="product-options">
+                <p>Tamanho</p>
+                <ProductOptions 
+                    options={["39", "40", "41", "42", "43"]}
+                    shape="square"
+                    radius="4px"
+                />
+                <p>Cor</p>
+                <ProductOptions 
+                    options={["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"]}
+                    shape="circle"
+                />
+            </div>
+            
             <button>Comprar</button>
         </StyledBuyBox>
     )

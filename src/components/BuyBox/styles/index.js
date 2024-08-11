@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const StyledBuyBox = styled.div`
     font-family: "Inter", sans-serif;
+    height: 571px;
+    position: relative;
     & h2{
         width: 440px;
         letter-spacing: 1px;
@@ -75,6 +77,7 @@ export const StyledBuyBox = styled.div`
 
         & p{
             width: 440px;
+            margin-bottom: 30px;
             font-family: "Inter";
             font-size: 14px;
             font-weight: 500;
@@ -85,6 +88,8 @@ export const StyledBuyBox = styled.div`
         }
     }
     & button{
+            position: absolute;
+            bottom: 0;
             font-family: "Inter";
             font-size: 16px;
             font-weight: 700;
@@ -103,5 +108,16 @@ export const StyledBuyBox = styled.div`
                 background-color: rgba(225, 149, 0, 1);
                 color: #FFF;
             }
-        }
+    }
+    & div#product-options{
+        color: #8F8F8F;
+        font-family: "Inter";
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.75px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 `
